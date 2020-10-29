@@ -50,7 +50,19 @@ def ind(u):
      print(tabulate(u,headers=k)) 
      smmm(u)
     
-        
+# Program to find most frequent element in a list 
+
+def most_frequent(case_id): 
+	counter = 0
+	num = case_id[0] 
+	
+	for i in case_id: 
+		curr_frequency = case_id.count(i) 
+		if(curr_frequency> counter): 
+			counter = curr_frequency 
+			num = i 
+	return num
+
 def alo(z):
     cls= KNeighborsClassifier(n_neighbors= 5,metric='minkowski',p=2)
     cls.fit(x_train,y_train)
@@ -72,18 +84,7 @@ def alo(z):
     u=f[["Aadhaar No","Name","Gender","Age","Guardian","Contact","Address","Latitude","Longitude","Latitude_C","Longitude_C"]]
     ind(u)
     
-# Program to find most frequent element in a list 
 
-def most_frequent(case_id): 
-	counter = 0
-	num = case_id[0] 
-	
-	for i in case_id: 
-		curr_frequency = case_id.count(i) 
-		if(curr_frequency> counter): 
-			counter = curr_frequency 
-			num = i 
-	return num
 
 ######################################################################################
 
