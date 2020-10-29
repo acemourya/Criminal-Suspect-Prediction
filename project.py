@@ -18,7 +18,6 @@ warnings.filterwarnings("ignore")
 
 
 from sklearn.cluster import KMeans
-from sklearn import model_selection
 from sklearn.linear_model import LogisticRegression
 from sklearn.linear_model import LinearRegression
 from sklearn.neighbors import KNeighborsClassifier
