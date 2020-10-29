@@ -303,9 +303,7 @@ def Take_Inpt():
         ToC={'Other':0,'Snaching':1,'Burglary':2,'Robbery':3,'Assault':4,'Extortion':5}
         ln10=ToC[ln10]
     
-        import folium
-        from folium import plugins
-        import ipywidgets
+       
         import geocoder
         import geopy
         from vega_datasets import data as vds
