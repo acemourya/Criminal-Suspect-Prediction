@@ -1,8 +1,5 @@
 import numpy as np
 import pandas as pd
-from sklearn.preprocessing import LabelEncoder
-from sklearn.pipeline import Pipeline
-
 
 data= pd.read_excel(r"Data Path")
 data=pd.DataFrame(data)
